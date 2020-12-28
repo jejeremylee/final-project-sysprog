@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Courier+Prime");
+
+body {
+  font-family: "Courier Prime", monospace;
+  --background: #333333;
+  --white: #f2f2f2;
+  display: flex;
+}

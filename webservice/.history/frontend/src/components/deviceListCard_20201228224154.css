@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Courier+Prime");
+
+:root {
+  font-family: "Courier Prime", monospace;
+  --background: #333333;
+  --white: #f2f2f2;
+  display: flex;
+}
+
+.deviceListContainer {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deviceContainer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.deviceName {
+  color: var(--white);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.deviceDetails {
+  color: var(--white);
+  font-weight: inherit;
+  font-size: 14px;
+}
+
+.buttonContainer {
+  display: flex;
+  align-content: flex-end;
+}
+
+.bindButton {
+  border-color: var(--white);
+  border-radius: 0%;
+  background-color: var(--background);
+  color: var(--white);
+}

@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Courier+Prime");
+
+:root {
+  font-family: "Courier Prime", monospace;
+  --background: #333333;
+  --white: #F2F2F2;
+}
+
+
+.deviceListContainer {
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  max-height: 600px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-color: var(--white)
+  background-color: var(--background)
+}
