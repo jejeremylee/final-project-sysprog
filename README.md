@@ -52,6 +52,12 @@ Django REST Framework
 pip3 install djangorestframework
 ```
 
+Django CORS Header
+
+```bash
+pip3 install django-cors-headers
+```
+
 
 ## Running webserver
 
