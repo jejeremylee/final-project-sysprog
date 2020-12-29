@@ -7,34 +7,40 @@
   display: flex;
 }
 
-.deviceListContainer {
+.devistListContainer {
   display: flex;
-  width: 100%;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
+
 }
 
 .deviceContainer {
   display: flex;
   flex-direction: column;
   align-content: center;
+  width: fit-content;
 }
 
 .deviceName {
   color: var(--white);
   font-weight: bold;
-  font-size: 18px;
+  font-size: 14px;
+  width: max-content;
 }
 
 .deviceDetails {
   color: var(--white);
   font-weight: inherit;
   font-size: 14px;
+  width: max-content;
 }
 
 .buttonContainer {
+  width: -webkit-fill-available;
+  height: fit-content;
   display: flex;
+  align-items: flex-end;
+  flex-direction: column;
 }
 
 .bindButton {

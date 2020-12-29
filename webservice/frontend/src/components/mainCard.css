@@ -21,6 +21,7 @@
   padding-right: 40px;
   padding-top: 20px;
   background-color: inherit;
+  align-content: center;
   flex-direction: column;
   padding-bottom: 20px;
 }
@@ -49,8 +50,8 @@ h4 {
 .listContainer {
   display: flex;
   flex-direction: column;
-  margin-top: 84px;
-  margin-bottom: 84px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   padding: 8px;
 }
 
@@ -64,4 +65,8 @@ h4 {
 .runButton {
   border-radius: 0%;
   border-color: var(--white);
+}
+
+.noDeviceText{
+  color: white;
 }
