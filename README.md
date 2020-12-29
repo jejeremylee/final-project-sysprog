@@ -80,6 +80,28 @@ API:
 
    Get USB devices list from matakubiru kernel
 
+2. **POST** hostname:8080/matakubiru/bind-usb
+
+   bind USB devices list in matakubiru kernel
+   
+   POST Body example:
+   {
+      "bus":"1",
+      "usbName":"Logitech Gaming Mouse"
+   }
+
+3. **POST** hostname:8080/matakubiru/unbind-usb
+
+   unbind USB devices list in matakubiru kernel
+   
+   POST Body example:
+   {
+      "bus":"1",
+      "usbName":"Logitech Gaming Mouse"
+   }
+
+   
+
 
 
 
