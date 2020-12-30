@@ -64,12 +64,6 @@ pip3 install django-cors-headers
 Go to matakubiru directory first!
 
 ```bash
-python3 manage.py runserver
-```
-
-OR
-
-```bash
 python3 manage.py runserver 0.0.0.0:8000
 ```
 
