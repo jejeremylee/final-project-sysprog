@@ -44,6 +44,15 @@
 }
 
 .bindButton {
+  border-color: var(--background);
+  border-radius: 0%;
+  background-color: var(--white);
+  color: var(--background);
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.unbindButton {
   border-color: var(--white);
   border-radius: 0%;
   background-color: var(--background);

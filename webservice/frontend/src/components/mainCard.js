@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Button from "react-bootstrap/Button";
 import DeviceListCard from "./deviceListCard";
 import "./mainCard.css";
 
@@ -25,35 +24,26 @@ export default class MainCard extends Component {
     })
     .then ((Response) => Response.json())
     .then ((resp) => {
-        console.log(resp)
         this.setState({
             deviceList:resp,
         })
     })
 }
   render() {
-
-    // this.state.deviceList.map(d => 
-    //   console.log(d)
-    //   );
-
-    //   Object.keys(this.state.deviceList).map(name => (
-    //     console.log(this.state.deviceList.tag)
-    //   ))
       
     return (
       <div className="mainContainer">
         <div className="pageTitleContainer">
-          <h2>USB Device Driver Checker</h2>
-          <h4>an utility made by mataku biru</h4>
+          <h2>USB Device Driver Monitor</h2>
+          <h4>an utility made by matakubiru</h4>
         </div>
         <div className="listContainer">
         {this.state.deviceList.length > 0 ?
 
         this.state.deviceList.map( device =>
-           <DeviceListCard
-            device={device}
-          />
+          <DeviceListCard
+          device={device}
+        />
         )
           :
           <div className="noDeviceText">
@@ -61,10 +51,11 @@ export default class MainCard extends Component {
             </div>
           }
         </div>
-        <div className="runButtonContainer">
-          <Button variant="outline-light" className="bindButton" block>
-            Run
-          </Button>
+        <div className="help">
+          ** refresh the page if there's new usb device connected to the kernel
+          </div>
+          <div className="help">
+          ** bind all your unbinded usb device first before refreshing the page
         </div>
       </div>
     );
