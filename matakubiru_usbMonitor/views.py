@@ -24,11 +24,11 @@ def getUSBDevices():
     return devices
 
 def bindUSBDevice(usb):
-    bind = subprocess.check_call("echo "+usb+" > /sys/bus/usb/drivers/usb/bind", shell=True)
+    bind = subprocess.call("sudo bash -c 'echo "+usb+" > /sys/bus/usb/drivers/usb/bind'", shell=True)
     return "OK"
 
 def unbindUSBDevice(usb):
-    unbind = subprocess.check_call("echo "+usb+" > /sys/bus/usb/drivers/usb/unbind", shell=True)
+    unbind = subprocess.call("sudo bash -c 'echo "+usb+" > /sys/bus/usb/drivers/usb/unbind'", shell=True)
     return "OK"
 
 @api_view(["GET"])

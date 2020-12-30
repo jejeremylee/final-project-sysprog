@@ -1,5 +1,5 @@
 #!/bin/bash
 
 
-echo "$1" > /sys/bus/usb/drivers/usb/unbind
+sudo bash -c 'echo '+$1+' > /sys/bus/usb/drivers/usb/unbind'
 
