@@ -1,0 +1,10 @@
+[Unit]
+Description= matakubiru systemd service
+
+[Service]
+ExecStart =/bin/bash /usr/bin/matakubiru_service.sh
+StandardOutput =file:/var/log/matakubiru/out.log
+StandardError =file:/var/log/matakubiru/err.log
+
+[Install]
+WantedBy=multi-user.target

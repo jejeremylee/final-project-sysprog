@@ -1,0 +1,6 @@
+Watching for file changes with StatReloader
+[31/Dec/2020 06:15:57] "GET /matakubiru/usb-list HTTP/1.1" 200 391
+[31/Dec/2020 06:16:04] "POST /matakubiru/unbind-usb HTTP/1.1" 201 59
+[31/Dec/2020 06:16:09] "POST /matakubiru/bind-usb HTTP/1.1" 201 57
+[31/Dec/2020 06:19:46] "GET /matakubiru/usb-list HTTP/1.1" 200 391
+[31/Dec/2020 06:20:34] "GET /matakubiru/usb-list HTTP/1.1" 200 488
